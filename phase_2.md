@@ -48,7 +48,7 @@ These records had the description:
 
 They are accounting adjustments rather than product sales and will therefore be excluded from sales revenue calculations.
 
-### Duplicate Transactions
+### 6. Duplicate Transactions
 
 Exact duplicate rows were identified by comparing all transaction fields:
 
@@ -67,7 +67,7 @@ Because the dataset does not contain a unique line-item identifier, exact matche
 
 ---
 
-## Key Findings from the Initial Data Review
+### Key Findings from the Initial Data Review
 
 The raw dataset contains several distinct transaction types rather than a simple set of sales records:
 
