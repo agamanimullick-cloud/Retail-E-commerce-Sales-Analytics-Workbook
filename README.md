@@ -2,6 +2,8 @@
 
 We use Power Query to process large data sets that exceed Excel's 1-million-row limit because it can transform and filter millions of rows in memory before you load only what you need.
 
+Power Query is effectively building a reusable recipe. If you refresh the query later, Excel reruns the same recipe instead of you cleaning the file manually again.
+
 2. Understand the raw dataset
 3. Clean the data
 4. Create calculated fields and flags
