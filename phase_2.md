@@ -2,13 +2,13 @@
 
 Before cleaning the dataset, I reviewed the raw transactions to understand the different data-quality issues and distinguish genuine business events from errors or administrative adjustments.
 
-### Missing Customer IDs
+### 1. Missing Customer IDs
 
 Some transactions contain blank `Customer ID` values.
 
 These records were not removed immediately because a missing customer identifier does not necessarily mean the underlying transaction is invalid.
 
-### Cancelled and Returned Transactions
+### 2. Cancelled and Returned Transactions
 
 Invoices beginning with `C` were identified as cancelled or returned transactions.
 
@@ -16,7 +16,7 @@ These records generally contain negative quantities and represent reversals of p
 
 Rather than deleting these transactions, they will be retained so that return value and net revenue can be analysed separately.
 
-### Negative Quantities
+### 3. Negative Quantities
 
 The dataset also contains negative quantities where the invoice does not begin with `C`.
 
@@ -30,7 +30,7 @@ This suggests that some negative-quantity records represent inventory adjustment
 
 This means negative quantity alone should not be used to classify a transaction as a return.
 
-### Zero-Price Transactions
+### 4. Zero-Price Transactions
 
 Transactions with `Price = 0` were reviewed separately.
 
@@ -38,7 +38,7 @@ Many appeared to be operational or inventory adjustments, including records rela
 
 These transactions will not contribute to sales revenue, but they may still contain useful operational information.
 
-### Negative Prices
+### 5. Negative Prices
 
 Only a small number of negative-price transactions were found.
 
