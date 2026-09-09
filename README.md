@@ -1,4 +1,7 @@
 1. Import the CSV with Power Query
+
+We use Power Query to process large data sets that exceed Excel's 1-million-row limit because it can transform and filter millions of rows in memory before you load only what you need.
+
 2. Understand the raw dataset
 3. Clean the data
 4. Create calculated fields and flags
